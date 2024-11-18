@@ -52,7 +52,7 @@ body {
 }
 
 .play-board .food {
-  background-image: url("./assets/img/food.webp");
+  background-image: url("../assets/img/food.webp");
   padding: 0px;
   margin: 0px;
   max-width: 100%;
