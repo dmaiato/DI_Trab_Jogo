@@ -19,5 +19,5 @@ alert)
 - Tela bem feita, pronta para o usuário final. Impedir que o usuário cause erros JS.
 - A página não deve ter erros HTML ou CSS pegos pelo validador. Nem erros JS pegos
 pelas ferramentas de erros do navegador.
-• O jogo deve ter alguma informação armazenada e recuperada no localstorage (recorde,
+- O jogo deve ter alguma informação armazenada e recuperada no localstorage (recorde,
 estágio, última posição...)
