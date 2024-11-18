@@ -36,7 +36,7 @@ const createGame = () => {
 
 // pegando o highscore
 let highScore = localStorage.getItem("high-score") || 0;
-highScoreElement.innerText = `High Score: ${highScore}`;
+highScoreElement.innerText = `Recorde: ${highScore}`;
 
 // botão de reload
 buttonElement.addEventListener("click", () => {
