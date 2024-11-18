@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/game_logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js" defer></script>
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Snake</title>
+</head>
+<body>
+  <audio id="audio" src="assets/sound/pop.mp3"></audio>
+  <div class="wrapper">
+    <div class="game-details">
+      <span class="score">Pontos: 0</span>
+      <span class="high-score">Recorde: 0</span>
+    </div>
+    <div id="menu" class="menu">
+      <span id="menu-text">Junte 30 maçãs para vencer!</span>
+      <button class="button">Iniciar</button>
+    </div>
+    <div id="play-board" class="play-board"></div>
+    <div class="controls">
+      <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+      <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+      <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+      <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+    </div>
+  </div>
+
+  <script src="scripts/script.js"></script>
+  
+</body>
+</html>

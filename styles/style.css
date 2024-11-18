@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(15, 15, 15);
+}
+
+.titulo {
+  color: #b8c6dc;
+  margin: 20px;
+  font-size: 1.1rem;
+}
+
+.wrapper {
+  width: 65vmin;
+  height: 70vmin;
+  background: #293447;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.game-details {
+  color: #b8c6dc;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.play-board {
+  width: 100%;
+  height: 100%;
+  background: #212837;
+  display: none;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  grid-auto-columns: 20px;
+  grid-auto-rows: 20px;
+}
+
+.play-board .food {
+  background-image: url("/assets/img/food.webp");
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.play-board .head {
+  background-color: #00ff6a;
+  border-radius: 2px;
+}
+
+.menu {
+  color: #b8c6dc;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #212837;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+button {
+  height: 40px;
+  background: #009578;
+  color: whitesmoke;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0px 15px 0px 15px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #008168;
+}
+
+.controls {
+  display: none;
+  justify-content: space-between;
+  height: 15%;
+}
+
+.controls i {
+  padding: 25px;
+  color: #B8C6DC;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  width: calc(100% / 4);
+  border-right: 1px solid #171b26;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .controls {
+    vertical-align: center;
+    display: flex;
+  }
+  .controls i {
+    vertical-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}
